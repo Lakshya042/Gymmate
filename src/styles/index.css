@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Theme */
+body {
+  @apply min-h-screen font-sans text-black bg-blue-100;
+}
+
+/* Smooth scrolling & transitions */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  @apply transition-colors duration-300 ease-in-out;
+}
+
+/* Premium Card */
+.card {
+  background: #1f1f1f; /* Dark grey */
+  border: 1px solid #2a2a2a;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  @apply shadow-lg;
+}
+
+/* Primary Buttons */
+.btn-primary {
+  @apply px-6 py-3 rounded-lg font-medium text-white bg-gray-700 hover:bg-gray-600;
+}
+
+/* Secondary Buttons */
+.btn-secondary {
+  @apply px-6 py-3 rounded-lg font-medium text-gray-300 border border-gray-600 hover:bg-gray-700;
+}
+
+/* Page Headings */
+.page-heading {
+  @apply text-3xl font-bold mb-6 text-white;
+}
